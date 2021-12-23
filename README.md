@@ -17,3 +17,5 @@
 
   console.log(obj.name) // [['Hovhannes', 9], ['Sona', 4]]
 ```
+
+[Solution](get_set.js)

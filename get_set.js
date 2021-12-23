@@ -1,18 +1,16 @@
 const obj = {
-    name: [],
+    _name: [],
     get name() {
-      return obj.name
+      return obj._name
     },
     set name(value) {
-     value = value.split(' ');
+     value = value.split(', ');
      for(i = 0; i < value.length; i++){
-       obj.name.push([value[i], value[i].length])
+       obj._name.push([value[i], value[i].length])
      }
     }
   }
 
-  console.log(obj.name)
-
   obj.name = 'Hovhannes, Sona';
 
-  console.log(obj.name)
+  console.log(obj._name)
